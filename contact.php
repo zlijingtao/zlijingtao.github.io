@@ -44,9 +44,9 @@
           // 1. Enter the email address you would like the enquiry sent to
           // 2. Enter the subject of the email you will receive, when someone contacts you
           // 3. Enter the text that you would like the user to see once they submit the contact form
-          $to = 'email@emailaddress.com';
-          $subject = 'Enquiry from the website';
-          $contact_submitted = 'Your message has been sent.';
+          $to = 'jingtao1@asu.edu';
+          $subject = 'Enquiry from your homepage';
+          $contact_submitted = 'Hi Jingtao, I am contacting you.';
 
           // Do not amend anything below here, unless you know PHP
           function email_is_valid($email) {
