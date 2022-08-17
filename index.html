@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <link rel="icon" type="image/x-icon" href="/images/origami-16.png">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in solving security and privacy problems regarding machine learning systems while keeping high efficiency. 
+                I'm interested in efficiency, security and privacy fields of machine learning systems. 
                 Representative papers are <span class="highlight">highlighted</span>.
                 <!-- 每段描述适当增加，并且体现同时兼顾安全和效率。 -->
               </p>
@@ -91,8 +91,10 @@
               <a href="https://github.com/zlijingtao/ResSFL">Code</a>
               <p></p>
               <p>
-              We successfully defend model inversion attack in Split Federated Learning using a two-step framwork called ResSFL. Our defense achieves 10x reconstruction error with less than 2% accuracy drop.
-              </p>
+              This work for the first time, successfully defend model inversion attack in Split Federated Learning with the help of a two-step framework called ResSFL. 
+              The proposed ResSFL framework achieves effective attack mitigation (10x error) with high utility (less than 2% accuracy drop). 
+              With special design, we reduced the memory and computation overhead to an acceptable level.
+              </p> 
             </td>
           </tr>
 					
@@ -130,7 +132,10 @@
               /
               <a href="https://github.com/zlijingtao/Neurobfuscator">Code</a>
               <p></p>
-              <p>We present the first work of successfully prevent neural architecture stealing attack on GPU-equipped systems, with a full-stack obfuscation framework named Neurobfuscator.</p>
+              <p>We present the Neurobfuscator, the first in successfully prevent neural architecture stealing attack on GPU systems.
+                We obfuscate a ResNet-18 ImageNet model to a totally different architecture (with 44 layer difference) to the view of the attacker. 
+                The obfuscation is functionality-equivalent and comes with only 2% overall latency overhead. 
+              </p>
             </td>
           </tr>
 
@@ -279,7 +284,7 @@
               /
               <a href="https://github.com/zlijingtao/radar_check">Code</a>
               <p></p>
-              <p>We present the first work of detecting bit-flip attack on machine learning systems, with a light-weight fast checking & recovery framework named RADAR.</p>
+              <p>We present RADAR, the first work of detecting bit-flip attack on machine learning systems, with a light-weight fast checking & recovery mechanism.</p>
             </td>
           </tr>
           
