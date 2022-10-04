@@ -91,13 +91,45 @@
               <a href="https://github.com/zlijingtao/ResSFL">Code</a>
               <p></p>
               <p>
-              This work for the first time, successfully defend model inversion attack in Split Federated Learning with the help of a two-step framework called ResSFL. 
-              The proposed ResSFL framework achieves effective attack mitigation (10x error) with high utility (less than 2% accuracy drop). 
-              With special design, we reduced the memory and computation overhead to an acceptable level.
+                We develop a two-step “adversarial training + transfer learning” framework called ResSFL to resolve the privacy issue in Split Federated Learning. ResSFL mitigates the data privacy threat of SFL and makes model inversion attacks 10 times harder to succeed, with only a less than 1% drop in model accuracy. 
               </p> 
             </td>
           </tr>
 					
+
+          <tr onmouseout="jsp_stop()" onmouseover="jsp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='jsp_image'><img src='images/jsp.PNG' width="160"></div>
+                <img src='images/jsp.PNG' width="160">
+              </div>
+              <script type="text/javascript">
+                function jsp_start() {
+                  document.getElementById('jsp_image').style.opacity = "1";
+                }
+
+                function jsp_stop() {
+                  document.getElementById('jsp_image').style.opacity = "0";
+                }
+                jsp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Energy and Loss-aware Selective Updating for SplitFed Learning with Energy Harvesting-Powered Devices</papertitle>
+              <br>
+              <a href="https://scholar.google.com/citations?user=7E7smpcAAAAJ&hl=zh-CN">Xing Chen</a>,
+              <strong>Jingtao Li</strong>,
+              <a href="https://www.public.asu.edu/~chaitali/">Chaitali Chakrabarti</a>
+              <br>
+              <em>Journal of Signal Processing Systems (JSP)</em>
+              <br>
+              <a href="https://link.springer.com/article/10.1007/s11265-022-01781-4">Paper</a>
+              /Code
+              <p></p>
+              <p>We design an energy+loss-aware communication reduction scheme for SFL that successfully saves total energy consumption by 43.7% to 80.5% with only a 0.5% sacrifice in model accuracy for VGG11 and ResNet20 models on CIFAR-10 and CIFAR-100 datasets. </p>
+            </td>
+          </tr>
+
 
           <tr onmouseout="neurob_stop()" onmouseover="neurob_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -132,9 +164,7 @@
               /
               <a href="https://github.com/zlijingtao/Neurobfuscator">Code</a>
               <p></p>
-              <p>We present the Neurobfuscator, the first in successfully prevent neural architecture stealing attack on GPU systems.
-                We obfuscate a ResNet-18 ImageNet model to a totally different architecture (with 44 layer difference) to the view of the attacker. 
-                The obfuscation is functionality-equivalent and comes with only 2% overall latency overhead. 
+              <p> We propose NeurObfuscator, a full-stack DNN model processing obfuscation framework embedded in the compilation of a DNN model to prevent neural architecture stealing. The obfuscated model generates drastically different hardware traces and successfully fools a potential architecture thief by keeping fast execution and equivalent model functionality. Results on sequence obfuscation show that the proposed tool obfuscates a ResNet-18 ImageNet model to a totally different architecture (with 44 layer difference) without affecting its functionality with only 2% overall latency overhead.
               </p>
             </td>
           </tr>
@@ -173,7 +203,7 @@
               /
               <a href="https://github.com/adnansirajrakin/T-BFA">Code</a>
               <p></p>
-              <p>We propose the first work of targeted BFA based (T-BFA) adversarial weight attack on DNNs, which can intentionally mislead selected inputs to a target output class. </p>
+              <p>We propose the first work of targeted BFA based (T-BFA) adversarial weight attack on DNNs, which can intentionally mislead selected inputs to a target output class. By merely flipping 27 out of 88 million weight bits of ResNet-18, our T-BFA can misclassify all the images from Hen class into Goose class (i.e., 100% attack success rate) in ImageNet dataset, while maintaining 59.35% validation accuracy.</p>
             </td>
           </tr>
 
@@ -207,7 +237,7 @@
               /
               Code
               <p></p>
-              <p>We proposes a loss-based asynchronous training scheme to effectively reduce the communication overhead of Split Learning by 106.7x at most. </p>
+              <p>We proposes a loss-based asynchronous training scheme to effectively reduce the communication and computation overhead of Split Learning. Simulation results on VGG11, VGG13 and ResNet18 models on CIFAR-10 show that the communication cost is reduced by 1.64x-106.7x and the computations in the client are reduced by 2.86x-32.1x when the accuracy degradation is less than 0.5%.</p>
             </td>
           </tr>
 
@@ -242,13 +272,13 @@
               <a href="https://faculty.engineering.asu.edu/jseo/">Jae-son Seo</a>,
               <a href="https://dfan.engineering.asu.edu/">Deliang Fan</a>
               <br>
-              <em>Arxiv</em>
+              <em>Arxiv (Major Revision, TPAMI)</em>
               <br>
               <a href="https://arxiv.org/pdf/2103.13813.pdf">Paper</a>
               /
               Code
               <p></p>
-              <p>We propose RA-BNN that adopts a complete binary neural network to significantly improve DNN model robustness </p>
+              <p>We propose RA-BNN that adopts a complete binary neural network to significantly improve DNN model robustness. Our evaluation of the CIFAR-10 dataset shows that the proposed RA-BNN can improve the clean model accuracy by ~2-8 %, compared with a baseline BNN, while simultaneously improving the resistance to BFA by more than 125 x. </p>
             </td>
           </tr>
           
@@ -284,7 +314,7 @@
               /
               <a href="https://github.com/zlijingtao/radar_check">Code</a>
               <p></p>
-              <p>We present RADAR, the first work of detecting bit-flip attack on machine learning systems, with a light-weight fast checking & recovery mechanism.</p>
+              <p>We present RADAR, the first work of detecting bit-flip attack on machine learning systems, with a light-weight fast checking & recovery mechanism. For this model, the proposed accuracy recovery scheme can restore the accuracy from below 1% caused by 10 bit flips to above 69%. System-level simulation on gem5 shows that RADAR only adds < 1% to the inference time, making this scheme highly suitable for run-time attack detection and mitigation.</p>
             </td>
           </tr>
           
@@ -322,7 +352,7 @@
               /
               <a href="https://github.com/zlijingtao/DAC20_reconstruction">Code</a>
               <p></p>
-              <p>We propose a novel weight reconstruction method that effectively mitigate bit-flips on quantized neural networks, either happen naturally or injected by malicious attackers.</p>
+              <p>We propose a novel weight reconstruction method that effectively mitigate bit-flips on quantized neural networks, either happen naturally or injected by malicious attackers. Even under the most aggressive attack (i.e., BFA), our method maintains a test accuracy of 60% on ImageNet after 5 iterations while the baseline accuracy drops to below 1%.</p>
             </td>
           </tr>
 
@@ -359,10 +389,44 @@
               /
               <a href="https://github.com/elliothe/BFA">Code</a>
               <p></p>
-              <p>We propose to leverage binarization-aware training and its relaxation - piece-wise clustering as simple and effective countermeasures to BFA.</p>
+              <p>We propose piece-wise clustering as simple and effective countermeasures to BFA. The experiments show that, for BFA to achieve the identical prediction accuracy degradation (eg, below 11% on CIFAR-10), it requires 19.3 x and 480.1 x more effective malicious bit-flips on ResNet-20 and VGG-11 respectively, compared to defend-free counterparts.</p>
             </td>
           </tr>
           
+          <tr onmouseout="jetcas_stop()" onmouseover="jetcas_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='jetcas_image'><img src='images/jetcas.PNG' width="160"></div>
+                <img src='images/jetcas.PNG' width="160">
+              </div>
+              <script type="text/javascript">
+                function jetcas_start() {
+                  document.getElementById('jetcas_image').style.opacity = "1";
+                }
+
+                function jetcas_stop() {
+                  document.getElementById('jetcas_image').style.opacity = "0";
+                }
+                jetcas_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>MAX2: An ReRAM-Based Neural Network Accelerator That Maximizes Data Reuse and Area Utilization</papertitle>
+              <br>
+              Manqing Mao, Xiaochen Peng, Rui Liu, 
+              <strong>Jingtao Li</strong>, 
+              <a href="https://shimeng.ece.gatech.edu//">Shimeng Yu</a>,
+              <a href="https://www.public.asu.edu/~chaitali/">Chaitali Chakrabarti</a>
+              <br>
+              <em>JETCAS</em>
+              <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/8680623">Paper</a>
+              <p></p>
+              <p>We propose MAX2, a multi-tile ReRAM accelerator framework for supporting multiple CNN topologies, that maximizes on-chip data reuse and reduces on-chip bandwidth to minimize energy consumption due to data movement. The system-level evaluation in 32-nm node on several VGG-network benchmarks shows that the MAX2 can improve computation efficiency (TOPs/s/mm2) by 2.5x and energy efficiency (TOPs/s/W) by 5.2x compared with a state-of-the-art ReRAM-based accelerator.</p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="tcas_stop()" onmouseover="tcas_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
